@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-AUJlSBKlya/b+D66R/8ObhiU2EScTOQM6st4dZZbYCY='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self' https://api.gold-api.com https://open.er-api.com https://wrvokfzrcmmlzekudypu.supabase.co; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f4f1ea" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f1310" />
+    <meta name="theme-color" content="#f4f1ea" />
+    <style>
+      html, body, #root { margin: 0; min-height: 100%; background: #f4f1ea; }
+      @media (prefers-color-scheme: dark) {
+        html, body, #root { background: #0f1310; }
+      }
+    </style>
+    <meta name="description" content="Cotizaciones profesionales de joyería" />
+    <link rel="icon" type="image/png" href="/Program Files/Git/emerald-dealer-app/pwa-192.png" />
+    <link rel="apple-touch-icon" href="/Program Files/Git/emerald-dealer-app/apple-touch-icon.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Emerald Dealer" />
+    <title>Emerald Dealer</title>
+    <script type="module" crossorigin src="/Program Files/Git/emerald-dealer-app/assets/index-DckK_k2b.js"></script>
+    <link rel="modulepreload" crossorigin href="/Program Files/Git/emerald-dealer-app/assets/rolldown-runtime-QTnfLwEv.js">
+    <link rel="modulepreload" crossorigin href="/Program Files/Git/emerald-dealer-app/assets/supabase-DZKSDnAm.js">
+    <link rel="stylesheet" crossorigin href="/Program Files/Git/emerald-dealer-app/assets/index-COpWSd7f.css">
+  <link rel="manifest" href="/Program%20Files/Git/emerald-dealer-app/manifest.webmanifest"></head>
+  <body>
+    <div id="root"></div>
+    <script>
+      // Red de seguridad: si la app no logra arrancar (navegador interno de
+      // WhatsApp, navegador muy viejo, error de red), muestra instrucciones
+      // en vez de una pantalla en blanco.
+      (function () {
+        function showFallback() {
+          // Si el script principal ya arrancó, no es un fallo real (red lenta).
+          if (window.__EDQ_STARTED) return;
+          var root = document.getElementById('root');
+          if (root && !root.hasChildNodes()) {
+            root.innerHTML =
+              '<div style="min-height:100vh;box-sizing:border-box;font-family:system-ui,sans-serif;padding:48px 24px;text-align:center;color:#22302a;background:#f4f1ea">' +
+              '<h2 style="font-family:Palatino,Georgia,serif;color:#0a4d38;letter-spacing:.02em">Emerald Dealer</h2>' +
+              '<p>No se pudo cargar la aplicación en este navegador.</p>' +
+              '<p>Copia esta dirección y ábrela directamente en <strong>Chrome</strong> (Android) o <strong>Safari</strong> (iPhone):</p>' +
+              '<p style="background:#ffffff;border:1px solid #d6cfbe;padding:12px;border-radius:12px;word-break:break-all"><strong>santismagico.github.io/emerald-dealer-quote</strong></p>' +
+              '</div>';
+          }
+        }
+        window.addEventListener('error', function () { setTimeout(showFallback, 1500); }, true);
+        setTimeout(showFallback, 15000);
+      })();
+    </script>
+  </body>
+</html>
